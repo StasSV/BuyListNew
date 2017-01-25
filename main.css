@@ -1,0 +1,87 @@
+.bl-background {
+    background: white;
+    padding: 10px;
+    margin: 80px;
+    font-family: cursive;
+    
+}
+
+.bl-list {
+    background:  #cdcbcb;
+    margin-bottom: 1px;
+}
+
+
+.bl-bought {
+    background:  #cdcbcb;
+}
+.bl-product{
+    width: 60px;
+    margin: 20px;
+    margin-right: 200px;
+}
+
+/*Кнопки*/
+.bl-label {
+    background: #cdcbcb;
+    float: right;
+    padding: 3px;
+}
+.bl-label1 {
+    background: Gainsboro;
+    margin: 5px;
+    border-radius: 25px;
+    
+}
+.bl-label2 {
+    background: orange;
+    border-radius: 25px;
+    border-width: 20px;
+}
+.bl-addButton{
+     background: DodgerBlue;
+    font-family: cursive;
+    border-radius: 25px;
+}
+.bl-plus {
+    background: LimeGreen;
+    float: right;
+    margin-left: 3px;
+    border-radius: 25px;
+    
+}
+.bl-minus {
+    background: Salmon;
+    float: right;
+    margin-right: 3px;
+    border-radius: 25px;
+    
+}
+.bl-cross {
+    background: FireBrick;
+    float: right;
+    display: inline;
+}
+.boughtButton {
+    float: right;
+    font-family: cursive;
+    display: inline;
+    margin-left: 20%;
+}
+
+
+.right {
+width: 150px;
+height: 130px;
+background-color: #cdcbcb;
+float: right;
+padding: 10px;
+}.
+.left {
+background-color: blue;
+padding: 10px;
+}
+.container {
+background: orange;
+width: 100%;
+}.
