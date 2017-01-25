@@ -1,24 +1,26 @@
-.bl-background {
-    background: white;
-    padding: 10px;
-    margin: 80px;
-    font-family: cursive;
+.bl-list {
+    background:  white;
+    float: left;
+    margin-top: 10%;
+    margin-left: 10%;
+    width: 50%;
+    min-width: 300px;
+    border-radius: 10px;
+    padding: 5px;
     
 }
 
-.bl-list {
-    background:  #cdcbcb;
-    margin-bottom: 1px;
-}
-
-
 .bl-bought {
-    background:  #cdcbcb;
+    background:  white;
+    float: right;
+    margin-right:10%;
+    margin-top: 10%;
+    border-radius: 10px;
+    padding: 5px;
 }
 .bl-product{
     width: 60px;
     margin: 20px;
-    margin-right: 200px;
 }
 
 /*Кнопки*/
@@ -31,17 +33,21 @@
     background: Gainsboro;
     margin: 5px;
     border-radius: 25px;
+    padding: 3px;
     
 }
 .bl-label2 {
     background: orange;
     border-radius: 25px;
     border-width: 20px;
+    padding: 5px;
 }
 .bl-addButton{
      background: DodgerBlue;
     font-family: cursive;
     border-radius: 25px;
+    padding: 5px;
+    
 }
 .bl-plus {
     background: LimeGreen;
