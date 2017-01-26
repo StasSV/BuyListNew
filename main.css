@@ -38,9 +38,8 @@
 }
 .bl-label2 {
     background: orange;
-    border-radius: 25px;
-    border-width: 20px;
-    padding: 5px;
+    border-radius: 50px;
+    padding: 2px;
 }
 .bl-addButton{
      background: DodgerBlue;
