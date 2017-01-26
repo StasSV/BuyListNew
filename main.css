@@ -19,7 +19,6 @@
     padding: 5px;
 }
 .bl-product{
-    width: 60px;
     margin: 20px;
 }
 
@@ -75,18 +74,4 @@
 }
 
 
-.right {
-width: 150px;
-height: 130px;
-background-color: #cdcbcb;
-float: right;
-padding: 10px;
-}.
-.left {
-background-color: blue;
-padding: 10px;
-}
-.container {
-background: orange;
-width: 100%;
-}.
+
