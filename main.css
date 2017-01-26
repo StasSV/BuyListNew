@@ -29,6 +29,9 @@
     background: #cdcbcb;
     float: right;
     padding: 3px;
+    border-radius: 5px;
+     padding-left: 9px;
+    padding-right: 9px;
 }
 .bl-label1 {
     background: Gainsboro;
@@ -45,7 +48,8 @@
 .bl-addButton{
     background: DodgerBlue;
     font-family: cursive;
-    border-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
     padding: 5px;
     margin-left: -5px;
     
@@ -56,6 +60,9 @@
     float: right;
     margin-left: 3px;
     border-radius: 25px;
+    font-size: 15pt;
+     padding-left: 7px;
+    padding-right: 7px;
     
 }
 .bl-minus {
@@ -63,6 +70,10 @@
     float: right;
     margin-right: 3px;
     border-radius: 25px;
+    font-size: 15pt;
+    padding-left: 9px;
+    padding-right: 9px;
+    
     
 }
 .bl-cross {
@@ -79,7 +90,8 @@
 .text{
     width:80%;
     height: 25px;;
-    border-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
 }
 .bl-title{
     font-size: 15pt;
