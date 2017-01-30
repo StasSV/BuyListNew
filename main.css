@@ -102,6 +102,22 @@
     font-size: 15pt;
     padding: 10px;
 }
+.bl-labl{
+    position: fixed;
+    bottom: 20px;
+    padding: 15px;
+    left: 20px;
+    top: 93%;
+    background-color: darkviolet;
+    height: 110px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    font-size: 16pt;
+}
+.bl-labl:hover{
+    background-color: darkslateblue;  
+    top: 78%;
+}
 
 
 
