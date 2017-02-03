@@ -9,6 +9,8 @@
     padding: 15px;
     font-size: 15pt;
     box-sizing: border-box;
+    border-color: white;
+    border:2px;
     
 }
 
@@ -20,6 +22,8 @@
     border-radius: 10px;
     padding: 5px;
     width: 30%;
+    border-color: white;
+    border:2px;
 }
 
 .bl-product{
@@ -38,7 +42,7 @@
 .bl-label1 {
     background: Gainsboro;
     margin: 5px;
-    border-radius: 25px;
+    border-radius: 5px;
     padding: 3px;
     
 }
@@ -57,11 +61,11 @@
     padding: 5px;
     margin-left: -5px;
     transition: all 1s ease;
+    position: relative;
     
 }
-.bl-addButton:hover{
-    background-color: darkslateblue;  
-    transition: all 1s ease;
+.bl-addButton:hover .bl-lalbPrint{
+    display: inline-block;
 }
 
 .bl-plus {
@@ -95,7 +99,7 @@
     float: right;
     font-family: cursive;
     display: inline;
-    margin-left: 30%;
+    margin-left: 20%;
      border-radius: 5px;
 }
 .text{
@@ -112,42 +116,52 @@
     position: fixed;
     padding: 15px;
     left: 20px;
-    top: 93%;
+    top: 91%;
     background-color: darkviolet;
     height: 110px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     font-size: 16pt;
-    transition: all 1s ease;
-    z-index: 2;
+    transition: all 2s ease;
+     border: 5px black;
 }
 .bl-labl:hover{
     background-color: darkslateblue;  
-    top: 78%;
-    transition: all 1s ease;
+    top: 82%;
+    transition: all 2s ease;
+    content: "Stas";
 }
+
+.bl-name{
+   margin-left: 25px;
+}
+
 @media print {
-    .bl-labl:{
-    position: fixed;
-    bottom: 20px;
-    padding: 15px;
-    left: 20px;
-    background-color:white;
-    height: 110px;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    font-size: 16pt;
-    transition: all 1s ease;
+    *{
+        background-color: white;
+        color: black;
+        border-color: black;
+    }
+    .bl-name{
+        display: none;
+    }
+    .bl-labl{
+        border-color: black;
+        border-width: 5px;
+    }
+    
+  
+
+
 }
-}
-@media(max-width:1000px){
+@media(max-width:800px){
     .bl-list {
     background:  white;
     float: left;
     margin-top: 10%;
     margin-left: 5%;
     width: 55%;
-    min-width: 500px;
+    min-width: 450px;
     border-radius: 10px;
     padding: 15px;
     font-size: 15pt;
@@ -159,7 +173,7 @@
     background:  white;
     margin-top: 10%;
     border-radius: 10px;
-        min-width: 500px;
+        min-width: 440px;
     padding: 5px;
         position: absolute;
         left: 6%;
@@ -167,6 +181,14 @@
          width: 54%;
 }
 }
+.tooltip{
+    position: absolute;
+    z-index: 2;   
+    display: none;
+}
+
+
+
 
 
 
