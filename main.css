@@ -64,8 +64,27 @@
     position: relative;
     
 }
-.bl-addButton:hover .bl-lalbPrint{
+.bl-addButton::after{
+    color: black;
+    margin-top: -20;
+    padding: 5px;
+    background-color: white;
+    border-radius: 8px 8px 8px 0px;
+    content: attr(data-tooltip);
+    position: absolute;
+    display: none;
+    opacity: 0;
+    bottom: 110%;
+    left: 100%;
+    transition: all 2s ease;
+}
+.bl-addButton:hover::after{
     display: inline-block;
+    opacity: 1;
+    width: 50px;
+    height: 15px;
+    background-color: cadetblue;
+     transition: all 2s ease;
 }
 
 .bl-plus {
@@ -76,7 +95,30 @@
     font-size: 15pt;
     padding-left: 7px;
     padding-right: 7px;
+    position: relative;
     
+}
+.bl-plus::after{
+    color: black;
+    margin-top: -20;
+    padding: 5px;
+    background-color: white;
+    border-radius: 8px 8px 8px 0px;
+    content: attr(data-tooltip);
+    position: absolute;
+    display: none;
+    opacity: 0;
+    bottom: 110%;
+    left: 100%;
+    transition: all 2s ease;
+}
+.bl-plus:hover::after{
+    display: inline-block;
+    opacity: 1;
+    width: 50px;
+    height: 15px;
+    background-color: cadetblue;
+     transition: all 2s ease;
 }
 .bl-minus {
     background: Salmon;
@@ -85,15 +127,59 @@
     border-radius: 25px;
     font-size: 15pt;
     padding-left: 9px;
-    padding-right: 9px;
-    
-    
+    padding-right: 9px;  
+    position: relative;
+}
+.bl-minus::after{
+    color: black;
+    margin-top: -20;
+    padding: 5px;
+    background-color: white;
+    border-radius: 8px 8px 8px 0px;
+    content: attr(data-tooltip);
+    position: absolute;
+    display: none;
+    opacity: 0;
+    bottom: 110%;
+    left: 100%;
+    transition: all 2s ease;
+}
+.bl-minus:hover::after{
+    display: inline-block;
+    opacity: 1;
+    width: 50px;
+    height: 15px;
+    background-color: cadetblue;
+     transition: all 2s ease;
 }
 .bl-cross {
     background: FireBrick;
     float: right;
     display: inline;
      border-radius: 5px;
+    position: relative;
+}
+.bl-cross::after{
+    color: black;
+    margin-top: -20;
+    padding: 5px;
+    background-color: white;
+    border-radius: 8px 8px 8px 0px;
+    content: attr(data-tooltip);
+    position: absolute;
+    display: none;
+    opacity: 0;
+    bottom: 110%;
+    left: 100%;
+    transition: all 2s ease;
+}
+.bl-cross:hover::after{
+    display: inline-block;
+    opacity: 1;
+    width: 50px;
+    height: 15px;
+    background-color: cadetblue;
+     transition: all 2s ease;
 }
 .boughtButton {
     float: right;
@@ -101,6 +187,29 @@
     display: inline;
     margin-left: 20%;
      border-radius: 5px;
+    position: relative;
+}
+.boughtButton::after{
+    color: black;
+    margin-top: -20;
+    padding: 5px;
+    background-color: white;
+    border-radius: 8px 8px 8px 0px;
+    content: attr(data-tooltip);
+    position: absolute;
+    display: none;
+    opacity: 0;
+    bottom: 110%;
+    left: 100%;
+    transition: all 2s ease;
+}
+.boughtButton:hover::after{
+    display: inline-block;
+    opacity: 1;
+    width: 50px;
+    height: 15px;
+    background-color: cadetblue;
+     transition: all 2s ease;
 }
 .text{
     width:80%;
