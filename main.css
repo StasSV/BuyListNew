@@ -1,3 +1,4 @@
+
 .bl-list {
     background:  white;
     float: left;
@@ -81,7 +82,7 @@
 .bl-addButton:hover::after{
     display: inline-block;
     opacity: 1;
-    width: 50px;
+    width: 80px;
     height: 15px;
     background-color: cadetblue;
      transition: all 2s ease;
@@ -115,7 +116,7 @@
 .bl-plus:hover::after{
     display: inline-block;
     opacity: 1;
-    width: 50px;
+    width: 110px;
     height: 15px;
     background-color: cadetblue;
      transition: all 2s ease;
@@ -147,7 +148,7 @@
 .bl-minus:hover::after{
     display: inline-block;
     opacity: 1;
-    width: 50px;
+    width: 110px;
     height: 15px;
     background-color: cadetblue;
      transition: all 2s ease;
@@ -176,7 +177,7 @@
 .bl-cross:hover::after{
     display: inline-block;
     opacity: 1;
-    width: 50px;
+    width: 80px;
     height: 15px;
     background-color: cadetblue;
      transition: all 2s ease;
@@ -206,7 +207,7 @@
 .boughtButton:hover::after{
     display: inline-block;
     opacity: 1;
-    width: 50px;
+    width: 80px;
     height: 15px;
     background-color: cadetblue;
      transition: all 2s ease;
