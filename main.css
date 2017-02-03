@@ -10,8 +10,8 @@
     padding: 15px;
     font-size: 15pt;
     box-sizing: border-box;
-    border-color: white;
-    border:2px;
+    
+    
     
 }
 
@@ -23,8 +23,6 @@
     border-radius: 10px;
     padding: 5px;
     width: 30%;
-    border-color: white;
-    border:2px;
 }
 
 .bl-product{
@@ -233,7 +231,9 @@
     border-top-right-radius: 15px;
     font-size: 16pt;
     transition: all 2s ease;
-     border: 5px black;
+     border-style: dotted;
+    border-width: 5px;
+    border-color: white;
 }
 .bl-labl:hover{
     background-color: darkslateblue;  
@@ -243,20 +243,30 @@
 }
 
 .bl-name{
-   margin-left: 25px;
+   ma rgin-left: 25px;
 }
 
 @media print {
     *{
         background-color: white;
         color: black;
+    }
+    .bl-list{
+        border-style: dotted;
         border-color: black;
+        border-width: 2px;
+    }
+    .bl-bought{
+        border-style: dotted;
+        border-color: black;
+        border-width: 2px;
     }
     .bl-name{
         display: none;
     }
     .bl-labl{
-        border-color: black;
+        border-style: dashed;
+        border-color: darkviolet;
         border-width: 5px;
     }
     
