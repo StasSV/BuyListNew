@@ -65,7 +65,7 @@
 }
 .bl-addButton::after{
     color: black;
-    margin-top: -20;
+
     padding: 5px;
     background-color: white;
     border-radius: 8px 8px 8px 0px;
@@ -99,7 +99,6 @@
 }
 .bl-plus::after{
     color: black;
-    margin-top: -20;
     padding: 5px;
     background-color: white;
     border-radius: 8px 8px 8px 0px;
@@ -131,7 +130,6 @@
 }
 .bl-minus::after{
     color: black;
-    margin-top: -20;
     padding: 5px;
     background-color: white;
     border-radius: 8px 8px 8px 0px;
@@ -151,6 +149,7 @@
     background-color: cadetblue;
      transition: all 2s ease;
 }
+
 .bl-cross {
     background: FireBrick;
     float: right;
@@ -160,7 +159,6 @@
 }
 .bl-cross::after{
     color: black;
-    margin-top: -20;
     padding: 5px;
     background-color: white;
     border-radius: 8px 8px 8px 0px;
@@ -190,7 +188,6 @@
 }
 .boughtButton::after{
     color: black;
-    margin-top: -20;
     padding: 5px;
     background-color: white;
     border-radius: 8px 8px 8px 0px;
@@ -209,6 +206,14 @@
     height: 15px;
     background-color: cadetblue;
      transition: all 2s ease;
+}
+.bl-NOTBought{
+    float: right;
+    font-family: cursive;
+    display: inline;
+    margin-left: 20%;
+     border-radius: 5px;
+    display: none; 
 }
 .text{
     width:80%;
@@ -234,6 +239,7 @@
      border-style: dotted;
     border-width: 5px;
     border-color: white;
+    
 }
 .bl-labl:hover{
     background-color: darkslateblue;  
@@ -243,7 +249,7 @@
 }
 
 .bl-name{
-   ma rgin-left: 25px;
+   margin-left: 25px;
 }
 
 @media print {
