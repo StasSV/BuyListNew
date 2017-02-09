@@ -7,7 +7,7 @@ $(function () {
     var BOUGHT =$('.bl-titleLeft');
     var ITEM_TEMPLATE = $('.one-item').html();
     var BOUGHT_TEMPLATE = $('.row-bought').html();
-    var INPUT = $('.input');
+    var ITN = $('.one-itemBought');
     var LBL = $('.bl-label');
 
 
@@ -16,6 +16,7 @@ $(function () {
         var quantity = 1;
         var list = $(LIST);
         var node = $(ITEM_TEMPLATE); //Create new HTML node
+        var newNode = $(ITN);
         var nodeBought = $(BOUGHT_TEMPLATE);
         console.log("template", node);
         var $blLabel = node.find(".bl-label");
@@ -40,29 +41,41 @@ $(function () {
             node.remove();
             nodeBought.remove();
         });
+        if(quantity===1){
+            $minus.attr("disabled",true);
+        }
         node.find(".bl-plus").click(function (){
             quantity++;
-            if(quantity===1){
-                $minus.attr("disabled",true);
-            }
             if(quantity>1){
                 $minus.attr("disabled",false);
             }
+            if(quantity===1){
+                $minus.attr("disabled",true);
+            }
+
+
             $blLabel.text(quantity);
             $productBoughtVal.text(quantity);
         });
 //minus
         node.find(".bl-minus").click(function (){
             quantity--;
+            if(quantity>1){
+                $minus.attr("disabled",false);
+
+            }
             if(quantity===1){
                 $minus.attr("disabled",true);
             }
-            if(quantity>1){
-                $minus.attr("disabled",false);
-            }
+
+
             $blLabel.text(quantity);
             $productBoughtVal.text(quantity);
+
         });
+       /* node.find(".boughtButton").click(function(){
+            node.addClass("one")
+        });*/
 
 
 
@@ -72,6 +85,13 @@ $(function () {
         BOUGHT.append(nodeBought);
 
     }
+
+    // function plus(title){
+    //     var node = $(ITEM_TEMPLATE);
+    //     node.find(".bl-plus").click(function () {
+    //         node.remove();
+    //     });
+    // }
 
     function addNew(title){
         var list = $(LIST);

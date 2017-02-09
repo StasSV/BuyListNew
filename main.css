@@ -343,7 +343,7 @@
     display: none;
 }
 
-.one-item, .row-bought {
+.one-item, .row-bought,.one-itemBought {
     display: none;
 }
 
