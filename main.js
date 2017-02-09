@@ -14,7 +14,7 @@ $(function () {
 
     function addItem(title) {
         var quantity = 1;
-        var list = $(LIST);
+        var input = $(".text");
         var node = $(ITEM_TEMPLATE); //Create new HTML node
         var newNode = $(ITN);
         var nodeBought = $(BOUGHT_TEMPLATE);
@@ -40,6 +40,7 @@ $(function () {
         node.find(".bl-cross").click(function () {
             node.remove();
             nodeBought.remove();
+            updateNode();
         });
         if(quantity===1){
             $minus.attr("disabled",true);
@@ -73,8 +74,9 @@ $(function () {
             $productBoughtVal.text(quantity);
 
         });
-       /* node.find(".boughtButton").click(function(){
-            node.addClass("one")
+        /*node.find(".boughtButton").click(function(){
+            node.addClass("one-itemBought");
+            node.removeClass("one-item");
         });*/
 
 
@@ -86,27 +88,40 @@ $(function () {
 
     }
 
-    // function plus(title){
-    //     var node = $(ITEM_TEMPLATE);
-    //     node.find(".bl-plus").click(function () {
-    //         node.remove();
-    //     });
-    // }
-
+//add product
     function addNew(title){
+        var input = $(".text");
         var list = $(LIST);
         list.find(".bl-addButton").click(function () {
            // addItem(inp.getElementById("text").value );
-           addItem('new');
+            if(input.val()!="") {
+                addItem(input.val());
+
+            }
+            input.val('');
+        });
+        $(".text").keypress(function(e) {
+            if (e.which == 13) {
+                if(input.val()!="") {
+                    addItem(input.val());
+                }
+                input.val('');
+            }
         });
     }
 
-    // function changeName(title){
-    //     var node = $(ITEM_TEMPLATE); //Create new HTML node
-    //     node.find(".name").click(function(){
-    //         $("#text").val("New Value");
-    //     });
-    // }
+    function changeName(title){
+        var node = $(ITEM_TEMPLATE); //Create new HTML node
+        node.find(".name").click(function(){
+            node.addClass()
+        });
+    }
+    function updateNode(node, fn) {
+        node.fadeOut(250, function(){
+            fn();
+            node.fadeIn(250);
+        });
+    }
 
     addItem("Помідори");
     addItem("Сир");
