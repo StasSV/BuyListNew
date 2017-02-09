@@ -24,6 +24,8 @@ $(function () {
         var $minus = node.find(".bl-minus");
         var $blBoughtLabel = nodeBought.find(".bl-label1");
         var $productBoughtVal = nodeBought.find(".bl-label2");
+        var $titleLeft = nodeBought.find("bl-titleLeft");
+        var $titleBought = nodeBought.find("bl-titleBought");
 
         console.log("product pass", $productName);
         console.log("quantity pass",$blLabel);
@@ -74,10 +76,43 @@ $(function () {
             $productBoughtVal.text(quantity);
 
         });
-        /*node.find(".boughtButton").click(function(){
+
+        $productName.click(function(){
+            var oName = node.name();
+            var nName = '';
+
+            node.addClass("nameChange").val(oName);
+            node.removeClass("name");
+            if(node.find(".nameChange").val()!=''){
+                nName=node.find(".nameChange").val();
+                $productName.text(nName);
+                $blBoughtLabel.text(nName);
+            }else{
+                $productName.text(oName);
+                $blBoughtLabel.text(oName);
+            }
+            $productName.focus();
+            $productName.focusout(function(){
+                node.removeClass("nameChange");
+                node.addClass("name");
+            });
+        });
+
+
+
+        node.find(".boughtButton").click(function(){
             node.addClass("one-itemBought");
             node.removeClass("one-item");
-        });*/
+            nodeBought.remove();
+            $titleBought.append(nodeBought);
+        });
+
+        node.find(".boughtButton").click(function(){
+            node.addClass("one-item");
+            node.removeClass("one-itemBought");
+            nodeBought.remove();
+            $titleLeft.append(nodeBought);
+        });
 
 
 
@@ -110,12 +145,8 @@ $(function () {
         });
     }
 
-    function changeName(title){
-        var node = $(ITEM_TEMPLATE); //Create new HTML node
-        node.find(".name").click(function(){
-            node.addClass()
-        });
-    }
+
+
     function updateNode(node, fn) {
         node.fadeOut(250, function(){
             fn();
