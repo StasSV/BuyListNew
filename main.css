@@ -1,6 +1,6 @@
 
 .bl-list {
-    background:  white;
+    background: white;
     float: left;
     margin-top: 10%;
     margin-left: 5%;
@@ -10,23 +10,22 @@
     padding: 15px;
     font-size: 15pt;
     box-sizing: border-box;
-    
-    
-    
+
 }
 
 .bl-bought {
-    background:  white;
+    background: white;
     float: right;
-    margin-right:5%;
+    margin-right: 5%;
     margin-top: 10%;
     border-radius: 10px;
     padding: 5px;
     width: 30%;
 }
 
-.bl-product{
+.bl-product {
     margin: 20px;
+/ / display: inline-block;
 }
 
 /*Кнопки*/
@@ -35,24 +34,28 @@
     float: right;
     padding: 3px;
     border-radius: 5px;
-     padding-left: 9px;
+    padding-left: 9px;
     padding-right: 9px;
 }
+
 .bl-label1 {
     background: Gainsboro;
     margin: 5px;
     border-radius: 5px;
     padding: 3px;
-    
+
 }
+
 .bl-label2 {
     background: orange;
     border-radius: 50px;
     padding: 2px;
     padding-left: 7px;
     padding-right: 7px;
+    color: white;
 }
-.bl-addButton{
+
+.bl-addButton {
     background: DodgerBlue;
     font-family: cursive;
     border-bottom-right-radius: 5px;
@@ -61,9 +64,10 @@
     margin-left: -5px;
     transition: all 1s ease;
     position: relative;
-    
+
 }
-.bl-addButton::after{
+
+.bl-addButton::after {
     color: black;
 
     padding: 5px;
@@ -77,13 +81,14 @@
     left: 100%;
     transition: all 2s ease;
 }
-.bl-addButton:hover::after{
+
+.bl-addButton:hover::after {
     display: inline-block;
     opacity: 1;
     width: 80px;
     height: 15px;
     background-color: cadetblue;
-     transition: all 2s ease;
+    transition: all 2s ease;
 }
 
 .bl-plus {
@@ -95,9 +100,10 @@
     padding-left: 7px;
     padding-right: 7px;
     position: relative;
-    
+
 }
-.bl-plus::after{
+
+.bl-plus::after {
     color: black;
     padding: 5px;
     background-color: white;
@@ -110,14 +116,16 @@
     left: 100%;
     transition: all 2s ease;
 }
-.bl-plus:hover::after{
+
+.bl-plus:hover::after {
     display: inline-block;
     opacity: 1;
     width: 110px;
     height: 15px;
     background-color: cadetblue;
-     transition: all 2s ease;
+    transition: all 2s ease;
 }
+
 .bl-minus {
     background: Salmon;
     float: right;
@@ -125,10 +133,11 @@
     border-radius: 25px;
     font-size: 15pt;
     padding-left: 9px;
-    padding-right: 9px;  
+    padding-right: 9px;
     position: relative;
 }
-.bl-minus::after{
+
+.bl-minus::after {
     color: black;
     padding: 5px;
     background-color: white;
@@ -141,23 +150,25 @@
     left: 100%;
     transition: all 2s ease;
 }
-.bl-minus:hover::after{
+
+.bl-minus:hover::after {
     display: inline-block;
     opacity: 1;
     width: 110px;
     height: 15px;
     background-color: cadetblue;
-     transition: all 2s ease;
+    transition: all 2s ease;
 }
 
 .bl-cross {
     background: FireBrick;
     float: right;
     display: inline;
-     border-radius: 5px;
+    border-radius: 5px;
     position: relative;
 }
-.bl-cross::after{
+
+.bl-cross::after {
     color: black;
     padding: 5px;
     background-color: white;
@@ -170,23 +181,26 @@
     left: 100%;
     transition: all 2s ease;
 }
-.bl-cross:hover::after{
+
+.bl-cross:hover::after {
     display: inline-block;
     opacity: 1;
     width: 80px;
     height: 15px;
     background-color: cadetblue;
-     transition: all 2s ease;
+    transition: all 2s ease;
 }
+
 .boughtButton {
     float: right;
     font-family: cursive;
     display: inline;
     margin-left: 20%;
-     border-radius: 5px;
+    border-radius: 5px;
     position: relative;
 }
-.boughtButton::after{
+
+.boughtButton::after {
     color: black;
     padding: 5px;
     background-color: white;
@@ -199,33 +213,44 @@
     left: 100%;
     transition: all 2s ease;
 }
-.boughtButton:hover::after{
+
+.boughtButton:hover::after {
     display: inline-block;
     opacity: 1;
     width: 80px;
     height: 15px;
     background-color: cadetblue;
-     transition: all 2s ease;
+    transition: all 2s ease;
 }
-.bl-NOTBought{
+
+.bl-NOTBought {
     float: right;
     font-family: cursive;
     display: inline;
     margin-left: 20%;
-     border-radius: 5px;
-    display: none; 
+    border-radius: 5px;
+    display: none;
 }
-.text{
-    width:80%;
+
+.text {
+    width: 80%;
     height: 25px;;
     border-bottom-left-radius: 5px;
     border-top-left-radius: 5px;
 }
-.bl-title{
+
+.bl-titleLeft {
+    font-size: 15pt;
+    padding: 10px;
+
+}
+
+.bl-titleBought {
     font-size: 15pt;
     padding: 10px;
 }
-.bl-labl{
+
+.bl-labl {
     position: fixed;
     padding: 15px;
     left: 20px;
@@ -236,82 +261,97 @@
     border-top-right-radius: 15px;
     font-size: 16pt;
     transition: all 2s ease;
-     border-style: dotted;
+    border-style: dotted;
     border-width: 5px;
     border-color: white;
-    
+
 }
-.bl-labl:hover{
-    background-color: darkslateblue;  
+
+.bl-labl:hover {
+    background-color: darkslateblue;
     top: 82%;
     transition: all 2s ease;
     content: "Stas";
 }
 
-.bl-name{
-   margin-left: 25px;
+.bl-name {
+    margin-left: 25px;
 }
 
 @media print {
-    *{
+    * {
         background-color: white;
         color: black;
     }
-    .bl-list{
+
+    .bl-list {
         border-style: dotted;
         border-color: black;
         border-width: 2px;
     }
-    .bl-bought{
+
+    .bl-bought {
         border-style: dotted;
         border-color: black;
         border-width: 2px;
     }
-    .bl-name{
+
+    .bl-name {
         display: none;
     }
-    .bl-labl{
+
+    .bl-labl {
         border-style: dashed;
         border-color: darkviolet;
         border-width: 5px;
     }
-    
-  
-
 
 }
-@media(max-width:800px){
+
+@media (max-width: 800px) {
     .bl-list {
-    background:  white;
-    float: left;
-    margin-top: 10%;
-    margin-left: 5%;
-    width: 55%;
-    min-width: 450px;
-    border-radius: 10px;
-    padding: 15px;
-    font-size: 15pt;
-    box-sizing: border-box;
+        background: white;
+        float: left;
+        margin-top: 10%;
+        margin-left: 5%;
+        width: 55%;
+        min-width: 450px;
+        border-radius: 10px;
+        padding: 15px;
+        font-size: 15pt;
+        box-sizing: border-box;
         position: relative;
-    
-}
+
+    }
+
     .bl-bought {
-    background:  white;
-    margin-top: 10%;
-    border-radius: 10px;
+        background: white;
+        margin-top: 10%;
+        border-radius: 10px;
         min-width: 440px;
-    padding: 5px;
+        padding: 5px;
         position: absolute;
         left: 6%;
         top: 40%;
-         width: 54%;
+        width: 54%;
+    }
 }
-}
-.tooltip{
+
+.tooltip {
     position: absolute;
-    z-index: 2;   
+    z-index: 2;
     display: none;
 }
+
+.one-item, .row-bought {
+    display: none;
+}
+
+.bought-item {
+    display: inline-block;
+}
+
+
 
 
 
