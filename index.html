@@ -11,7 +11,6 @@
 
     <link rel="stylesheet" type="text/css" href="main.css"/>
 </head>
-<input>
 
 
 <div class="bl-list">
@@ -31,14 +30,15 @@
 </div>
 
 <div class="bl-bought">
-    <div class="bl-titleLeft"><b>Залишилося</b>
+    <div class="bl-titleLeft">
+        <b>Залишилося</b>
         <HR></HR>
     </div>
     <div class="bl-titleBought">
         <HR></HR>
-        <b>Куплено
+        <b>Куплено</b>
             <HR></HR>
-        </b></div>
+        </div>
 </div>
 
 <div class="bl-labl">
@@ -61,10 +61,18 @@
 </div>
 
 <div class="one-item">
+    <div class="one-itemNotBought">
     <div class="bl-count">
     <span class="bl-product">
         <span class="name">Печиво</span>
     </span>
+        <span>
+            <input class="nameChange" type="text" placeholder="changing">
+            <span class="newName">
+
+            </span>
+            </input>
+        </span>
         <button class="bl-cross" data-tooltip="I'm a tooltip"><font color='white'>
             ✕
         </font></button>
@@ -79,35 +87,37 @@
         </font></button>
         <HR></HR>
     </div>
-</div>
-
-<div class="one-itemBought">
-    <div class="bl-count">
+    </div>
+    <div class="one-itemBought">
+        <div class="bl-count">
     <span class="bl-product">
         <span class="name">
             <strike>Печиво</strike>
         </span>
     </span>
-        <button class="bl-NOTBought" data-tooltip="I'm a tooltip">Не Куплено</button>
+            <button class="bl-NOTBought" data-tooltip="I'm a tooltip">Не Куплено</button>
 
-        <span class="bl-label">1</span>
+            <span class="bl-label">1</span>
 
-        <HR></HR>
+            <HR></HR>
+        </div>
     </div>
 </div>
+
+
 
 <div class="row-bought">
     <span class="bought-item">
     <span class="bl-label1">Помідори
-                    <span class="bl-label2">
+
+    </span>
+        <span class="bl-label2">
                         1
-                    </span>
-                </span>
+        </span>
     </span>
 </div>
 
-<input class="nameChange">
-</input>>
+
 
 
 <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.js"></script>

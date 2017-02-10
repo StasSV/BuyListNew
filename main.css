@@ -39,11 +39,16 @@
 }
 
 .bl-label1 {
+
+
+}
+
+.bought-item {
+    display: inline-block;
     background: Gainsboro;
-    margin: 5px;
+    margin: 2px;
     border-radius: 5px;
     padding: 3px;
-
 }
 
 .bl-label2 {
@@ -226,7 +231,7 @@
 .bl-NOTBought {
     float: right;
     font-family: cursive;
-    display: inline;
+    display: inline-block;
     margin-left: 20%;
     border-radius: 5px;
     display: none;
@@ -343,13 +348,15 @@
     display: none;
 }
 
-.one-item, .row-bought,.one-itemBought,.nameChange {
+.one-item, .row-bought, .one-itemBought{
     display: none;
 }
 
-.bought-item {
-    display: inline-block;
+.nameChange{
+    display: none;
 }
+
+
 
 
 
