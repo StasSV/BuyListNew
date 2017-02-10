@@ -78,26 +78,31 @@ $(function () {
         });
 
         node.find(".bl-product").click(function () {
-            var oName = node.find(".bl-product").text();
-             var nName = '';
+            var oName = node.find(".name").text();
 
+            var nName = '';
 
-             node.addClass("nameChange");
-             node.removeClass("name");
-             //node.css("display","inline");
-             if(node.find(".nameChange").val()!=''){
-             nName=node.find(".nameChange").val();
-             $productName.text(nName);
-             $blBoughtLabel.text(nName);
-             }else{
-             $productName.text(oName);
-             $blBoughtLabel.text(oName);
-             }
-             $productName.focus();
-             $productName.focusout(function(){
-             node.removeClass("nameChange");
-             node.addClass("name");
-             });
+            node.find(".name").css("display","none");
+            node.find(".nameChange").css("display","inline");
+            node.find(".nameChange").val(oName);
+            if(node.find(".nameChange").val()!='') {
+                nName = node.find(".nameChange").val();
+                node.find(".name").val(nName);
+                node.find(".nameChange").focus();
+                node.find(".nameChange").focusout(function(){
+                    node.find(".name").css("display","inline");
+                    node.find(".nameChange").css("display","none");
+                    $blBoughtLabel.text(nName);
+                });
+            }else{
+                node.find(".name").val(oName);
+                node.find(".nameChange").focus();
+                node.find(".nameChange").focusout(function(){
+                    node.find(".name").css("display","inline");
+                    node.find(".nameChange").css("display","none");
+                    $blBoughtLabel.text(oName);
+                });
+            }
         });
 
 
