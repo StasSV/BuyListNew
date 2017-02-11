@@ -78,31 +78,19 @@ $(function () {
         });
 
         node.find(".bl-product").click(function () {
-            var oName = node.find(".name").text();
-
             var nName = '';
 
             node.find(".name").css("display","none");
             node.find(".nameChange").css("display","inline");
-            node.find(".nameChange").val(oName);
-            if(node.find(".nameChange").val()!='') {
+            node.find(".nameChange");
+            node.find(".nameChange").focus();
+            node.find(".nameChange").focusout(function(){
                 nName = node.find(".nameChange").val();
-                node.find(".name").val(nName);
-                node.find(".nameChange").focus();
-                node.find(".nameChange").focusout(function(){
-                    node.find(".name").css("display","inline");
-                    node.find(".nameChange").css("display","none");
-                    $blBoughtLabel.text(nName);
-                });
-            }else{
-                node.find(".name").val(oName);
-                node.find(".nameChange").focus();
-                node.find(".nameChange").focusout(function(){
-                    node.find(".name").css("display","inline");
-                    node.find(".nameChange").css("display","none");
-                    $blBoughtLabel.text(oName);
-                });
-            }
+                node.find(".name").text(nName);
+                node.find(".name").css("display","inline");
+                node.find(".nameChange").css("display","none");
+                $blBoughtLabel.text(nName);
+            });
         });
 
 
